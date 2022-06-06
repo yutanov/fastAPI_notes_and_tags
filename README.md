@@ -34,6 +34,10 @@ http://0.0.0.0:8000/docs
 
 > pip install -r requirements.txt
 
+<p>Запуск миграций</p>
+
+> alembic upgrade head
+
 <p>Запустить сервис</p>
 
 > python -m run
