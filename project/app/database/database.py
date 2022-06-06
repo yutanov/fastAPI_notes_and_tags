@@ -6,7 +6,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
 
 
-# DATABASE_DEFAULT_URL = ""
+DATABASE_DEFAULT_URL = "postgresql+asyncpg://postgres:postgres@db:5432/notes_API"
 DATABASE_URL = os.environ.get("DATABASE_URL")
 if DATABASE_URL is None:
     print("[Database Error] Environment Parameter - DATABASE_URL is None")
